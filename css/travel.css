@@ -1,0 +1,199 @@
+* 레이아웃 */
+body {margin: 0; padding: 0; height: 100%; position: relative;}
+
+
+/* 컨테이너 */
+.container {position: relative; width: 1100px; margin: 0 auto;}
+
+/* 메인_백그라운드 */
+main.background {
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    
+    position: relative;
+}
+
+
+/* 배너 */
+.bannersize {position: relative; margin: 0 auto; width: 100%; height: 480px; margin-bottom: 30px; background-color: #f3ebdb; overflow: hidden;}
+
+.banner {position: absolute; max-width: 100%; width: 1100px; height: 280px; text-align: center; left: 0; right: 0; margin-left: auto; margin-right: auto;}
+
+
+
+/* 헤더 */
+.header {position: absolute; float: right; right: 0; width: 78px; text-align: left; margin-top: 30px;}
+
+.header a {color: #74644e; font-size: 22px; display: inline-block; transition: color 0.3s ease; font-family: 'Rajdhani', sans-serif; font-weight: bold;}
+.header a:hover {color: #c8c8c8;}
+
+.header a.check {text-transform: uppercase; font-size: 26px;}
+
+
+/* 타이틀 */
+.title {float: left; margin-top: 21px; color: #74644e; text-align: left;}
+
+.big_title {font-family: 'Do Hyeon', sans-serif; font-size: 60px;}
+.small_title {font-family: 'Do Hyeon', sans-serif; font-size: 22px;}
+
+.line {float: left; height: 100px; border-left: 2.8px solid #74644e;}
+
+
+/* 디자인 person */
+.person {float: left; position: absolute; right: 100px; top: 38px;}
+.person img {width: 390px; height: 474px; transform: rotateY(180deg);}
+
+
+
+/* 컨텐츠 */
+.contents {position: absolute; width: 1100px; height: auto; color: #74644e; left: 0; right: 0; margin-left: auto; margin-right: auto;}
+.attraction {font-weight: 600; font-size: 32px; font-family: 'Do Hyeon', sans-serif; margin-bottom: 10px;}
+
+hr {height: 2.8px; border: 0; background-color: #74644e; width: 100%; margin-bottom: 30px;}
+
+.country {position: relative; float: left; width: 256.2px; height: 150px; overflow: hidden; margin-right: 25px; margin-bottom: 30px;}
+.country img.background {width: 250px; height: auto; min-height: 100%;}
+.country:hover img.background {filter: blur(3px); -webkit-transform: scale(1.1); transition: all 0.08s ease-in-out;}
+
+.country .front {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -60%); text-align: center; color: #fff; font-size: 12px;}
+.country .front .english {font-size: 35px; font-family: 'Playfair Display', serif;} 
+
+.country .front .add {z-index: 1; margin: 0; display: none; background-color: #000; opacity: 0.3; width: 200px;}
+.country:hover .front .add {z-index: 1; display: block; transition: all 0.08s ease-in-out;}
+
+.enter {margin-right: 0px;}
+.enter2 {}
+.lastline {margin-bottom: 0px;}
+
+
+
+
+/* 컨텐츠1 - 유럽 */
+.content1 {float: left; margin-bottom: 10px;}
+
+/* 컨텐츠2 - 남아메리카 */
+.content2 {float: left; margin-bottom: 10px;}
+
+/* 컨텐츠3 - 북아메리카 */
+.content3 {float: left; margin-bottom: 10px;}
+
+/* 컨텐츠4 - 아시아 */
+.content4 {float: left; margin-bottom: 10px;}
+
+/* 컨텐츠5 - 오세아니아 */
+.content5 {float: left; margin-bottom: 10px;}
+
+/* 컨텐츠6 - 아프리카 */
+.content6 {float: left; margin-bottom: 10px;}
+
+
+/* 푸터 */
+.footer {}
+
+
+
+/* mediaquery */
+/* 화면너비 0px ~ 1220px */
+@media (max-width: 1220px) {
+    .container {width: 100%;}
+    main.background {width: 100%;}
+}
+
+/* 화면너비 0px ~ 1024px */
+@media (max-width: 1024px) {
+}
+
+/* 화면너비 0px ~ 960px */
+@media (max-width: 960px) {
+}
+
+/* 화면너비 0px ~ 875px */
+@media (max-width: 875px) {
+    .contents {width: 93%;}
+    .country {width: 31%;}
+}
+
+
+/* 화면너비 0px ~ 845px */
+@media (max-width: 845px) {
+    .country {width: 30.8%;}
+}
+
+
+/* 화면너비 0px ~ 818px */
+@media (max-width: 818px) {
+}
+
+/* 화면너비 0px ~ 768px */
+@media (max-width: 768px) {
+}
+
+/* 화면너비 0px ~ 725px */
+@media (max-width: 725px) {
+    .bannersize {height: 600px;}
+    .bannerimg1 {padding-top: 400px;}
+    .bannerimg2 {padding-top: 400px;}
+
+    .country {width: 48%;}
+    .country img.background {width: 100%;}
+
+    .enter {margin-right: 25px;}
+    .enter2 {margin-right: 0;}
+}
+
+/* 화면너비 0px ~ 688px */
+@media (max-width: 688px) {
+    .country {width: 47.8%;}
+}
+
+/* 화면너비 0px ~ 633px */
+@media (max-width: 633px) {
+    .country {width: 47.6%;}
+}
+
+/* 화면너비 0px ~ 600px */
+@media (max-width: 600px) {
+    .bannersize {height: 800px;}
+    .bannerimg1 {width: 350px; height: auto; position: absolute; left: 0; right: 0; margin-left: auto; margin-right: auto; padding-top: 550px;}
+    .bannerimg2 {display: none;}
+
+    .country {width: 47.4%;}
+}
+
+/* 화면너비 0px ~ 540px */
+@media (max-width: 540px) {
+    .header .header_menu {width: 370px;}
+    .header .header_menu img {display: none;}
+
+    .bannerfont {width: 450px;}
+
+    .country {width: 47.2%;}
+}
+
+/* 화면너비 0px ~ 500px */
+@media (max-width: 500px) {
+    .country {width: 100%; margin-right: 0;}
+
+    .enter {margin-right: 0;}
+    .enter2 {margin-right: 0;}
+}
+
+/* 화면너비 0px ~ 480px */
+@media (max-width: 480px) {
+    .bannerfont {width: 400px;}
+}
+
+/* 화면너비 0px ~ 440px */
+@media (max-width: 440px) {
+}
+
+/* 화면너비 0px ~ 400px */
+@media (max-width: 400px) {
+    .header .header_menu a.align {padding: 18px 15px 18px 15px;}
+    .header .header_menu {width: 325px;}
+}
+
+/* 화면너비 0px ~ 360px */
+@media (max-width: 360px ) {
+}
